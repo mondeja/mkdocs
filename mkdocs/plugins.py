@@ -5,7 +5,11 @@ Implements the plugin API for MkDocs.
 
 
 import logging
-import importlib_metadata
+import sys
+if sys.version_info >= (3, 10):
+    import importlib.metadata as importlib_metadata
+else:
+    import importlib_metadata
 from collections import OrderedDict
 
 from mkdocs.config.base import Config

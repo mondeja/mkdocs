@@ -14,7 +14,10 @@ import yaml
 import fnmatch
 import posixpath
 import functools
-import importlib_metadata
+if sys.version_info >= (3, 10):
+    import importlib.metadata as importlib_metadata
+else:
+    import importlib_metadata
 from collections import defaultdict
 from datetime import datetime, timezone
 from urllib.parse import urlsplit
