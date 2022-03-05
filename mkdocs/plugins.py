@@ -6,7 +6,7 @@ Implements the plugin API for MkDocs.
 
 import logging
 import sys
-if sys.version_info >= (3, 10):
+if sys.version_info >= (3, 8):
     import importlib.metadata as importlib_metadata
 else:
     import importlib_metadata
