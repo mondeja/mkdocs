@@ -15,7 +15,7 @@ import fnmatch
 import posixpath
 import functools
 import sys
-if sys.version_info >= (3, 8):
+if sys.version_info >= (3, 10):
     import importlib.metadata as importlib_metadata
 else:
     import importlib_metadata
